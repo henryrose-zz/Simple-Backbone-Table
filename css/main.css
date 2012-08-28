@@ -1,0 +1,52 @@
+html{
+    font-size: 14px; 
+    font-family: Arial;
+    color: #233138;  
+}
+
+a{
+    color : #A84B3A; 
+    text-decoration: none; 
+}
+
+a:hover{
+    color : #834B3A; 
+}
+
+body{
+    padding: 20px; 
+}
+
+h1{
+    font-size: 38px; 
+    color: #FF9F67; 
+    text-shadow : #A84B3A 1px 1px 1px; 
+}
+
+.demo{
+    margin-top: 20px; 
+}
+
+#table{
+    min-width: 200px; 
+}
+
+#table th, 
+#table td{
+    text-align: left; 
+    padding: 5px;
+    width: 20%; 
+}
+
+#table th{
+    border-bottom: 1px #999 solid; 
+}
+
+a.remove{
+    font-size: 12px; 
+}
+
+#add-name{
+    margin-top: 10px; 
+    font-size: 10px; 
+}

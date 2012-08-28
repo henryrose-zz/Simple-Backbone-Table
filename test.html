@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+    <head lang="en">
+        <link rel="stylesheet" type="text/css" href="css/libs/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    </head>
+
+
+    <h1>Backbone Demo</h1>
+    <p>A interactive simple table rendered from a Collection of Backbone Models.</p>
+    
+    
+    <!-- A simple DOM on which to build our UI -->
+    <div class="demo">
+        <table id="table" ></table>
+        <div id="add-name"></div>
+    </div>
+
+
+    <!-- Include our globals file to initialize a couple of global variables -->
+    <script type="text/javascript" src="js/globals.js" ></script>
+    
+    <!-- Include library source -->
+    <script type="text/javascript" src="js/libs/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/libs/underscore-min.js"></script>
+    <script type="text/javascript" src="js/libs/backbone-min.js"></script>
+    
+    <!-- Include our source -->
+    <script type="text/javascript" src="js/TableModel.js"></script>
+    <script type="text/javascript" src="js/TableView.js"></script>
+    <script type="text/javascript" src="js/TableRowView.js"></script>
+    <script type="text/javascript" src="js/AddNameView.js"></script>
+
+
+    <script>
+    /** Sample data with which to bootstrap our collection **/
+    var sample_data = [
+        {
+            first_name : 'Peter', 
+            last_name : 'Frampton'
+        }, 
+        {
+            first_name : 'Paul', 
+            last_name : 'McCartney'
+        }
+    ]; 
+    </script>
+
+
+    <!-- Include our top level bootstrapping javascript file to initalize Backbone Models and Views -->
+    <script type="text/javascript" src="js/boot.js"></script>
+
+</html>
