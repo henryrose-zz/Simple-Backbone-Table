@@ -2,7 +2,12 @@
 
 henry.TableView = Backbone.View.extend({
 
-    // Provide a template to be used in the render function
+    /** 
+     * To keep our markup somewhat separate from the js we use templates, stored in an object at the top of each view. 
+     *  - It's best to keep these templates very granular
+     *  - Sometimes these are functions built with  _.template(), sometimes they are just strings
+     *  - Avoid logic in your templates
+     **/
     templates : {
         TH : '<tr><th>First Name</th><th>Last Name</th><th></th>'
     },
@@ -14,7 +19,10 @@ henry.TableView = Backbone.View.extend({
         me.collection.bind('add', me.addRow); 
     }, 
     
-    // The render function builds the html needed for this view and inserts it in the element associated with this view. 
+    /**
+     * The render function is responsible for creating an accurate portrayal of the model in any state
+     * - Keep it brief, if your render function is getting very large you probably ought to break it in to multiple sub-renders or sub views
+     **/
     render : function(){
         var me = this, 
             rows; 
