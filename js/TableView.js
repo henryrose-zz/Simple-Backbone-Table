@@ -30,7 +30,9 @@ henry.TableView = Backbone.View.extend({
         me.$el.empty(); 
         me.$el.append(me.templates.TH); 
         
-        me.renderRows(); 
+        me.renderRows();
+        
+        return this; 
     }, 
     
     // Create a Table Row View and add it to the DOM
